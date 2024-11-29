@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #004d66;
+}
+
+canvas {
+    border: 10px solid #0077b6;
+    margin-top: 40px;
+    background-color: #b0e0e6;  /* Powder blue background for the aquarium */
+}
