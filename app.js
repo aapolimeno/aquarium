@@ -119,9 +119,13 @@ function animate() {
     // Draw all fish
     fishes.forEach(drawFish);
 
-    // Update and draw all bubbles
-    updateBubbles();
-    bubbles.forEach(drawBubble);
+    if (bubbles.length > 0) {
+
+        // Update and draw all bubbles
+        updateBubbles();
+        bubbles.forEach(drawBubble);
+    }
+    // console.log("number of bubbles: " + bubbles.length);
 
     // Request the next animation frame
     requestAnimationFrame(animate);
@@ -153,4 +157,5 @@ addFish("#ff8c00", 150, 75, 400, 100, "#ff8c00");
 
 // Start the animation and interaction
 animate();
-spawnBubblesOnMouseMove(100); // Spawn bubbles every 100ms
+spawnBubblesOnMouseMove(20); // Spawn bubbles every 100ms
+
